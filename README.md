@@ -38,9 +38,9 @@ The grammar below defines the language for the expressions used in this applicat
 
 <pre>
 <code>
-&lsaquo;expr&rsaquo;      &xrarr;  &lsaquo;multExpr&rsaquo; ADD_OP &lsaquo;expr&rsaquo;
-&lsaquo;multExpr&rsaquo;  &xrarr;  &lsaquo;expExpr&rsaquo; MULT_OP &lsaquo;multExpr&rsaquo;
-&lsaquo;expExpr&rsaquo;   &xrarr;  &lsaquo;unaryExpr&rsaquo; EXP_OP &lsaquo;term&rsaquo;
-&lsaquo;unaryExpr&rsaquo; &xrarr;  ADD_OP &lsaquo;term&rsaquo;
+&lsaquo;expr&rsaquo;      &xrarr;  &lsaquo;multExpr&rsaquo; ADD_OP &lsaquo;expr&rsaquo; | &lsaquo;multExpr&rsaquo;
+&lsaquo;multExpr&rsaquo;  &xrarr;  &lsaquo;expExpr&rsaquo; MULT_OP &lsaquo;multExpr&rsaquo; | &lsaquo;expExpr&rsaquo;
+&lsaquo;expExpr&rsaquo;   &xrarr;  &lsaquo;unaryExpr&rsaquo; EXP_OP &lsaquo;term&rsaquo; | &lsaquo;unaryExpr&rsaquo;
+&lsaquo;unaryExpr&rsaquo; &xrarr;  ADD_OP &lsaquo;unaryExpr&rsaquo; | &lsaquo;term&rsaquo;
 &lsaquo;term&rsaquo;      &xrarr;  NUM | LPAR &lsaquo;expr&rsaquo; RPAR</code>
 </pre>
