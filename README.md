@@ -25,10 +25,10 @@ In order to validate and process the input expression, we need to specify the to
 The following table presents the tokens defined for this application. Its first column shows the tokens name, and the second column specifies a regex expression to recognize them.
 
 | Token Name    | Regex            |
-|:------------: |:---------------:|
+|:------------: |:----------------:|
 | NUM           | `[0-9]*`         |
-| ADD_OP        | `'+'|'-'`        |
-| MULT_OP       | `'*'|'/'|'%'`    |
+| ADD_OP        | `'+'\|'-'`        |
+| MULT_OP       | `'*'\|'/'\|'%'`   |
 | EXP_OP        | `'^'`            |
 | LPAR          | `'('`            |
 | RPAR          | `')'`            |
