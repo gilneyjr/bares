@@ -1,2 +1,2 @@
 # bares
-Basic ARithmetic Expression Evaluator based on Stacks)
+Basic ARithmetic Expression Evaluator based on Stacks
